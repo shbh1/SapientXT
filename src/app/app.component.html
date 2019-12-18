@@ -1,4 +1,12 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="row">
+  <div *ngFor="let item of data['results']; let i = index" class="col-sm-3 card" style="width: 18rem;">
+    <img class="card-img-top" (src)="item.image" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.
+      </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
