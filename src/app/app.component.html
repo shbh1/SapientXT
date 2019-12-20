@@ -18,7 +18,7 @@
   <div *ngFor="let item of bindedData | searchName: searchText ; let i = index"
     class="col-lg-3 col-sm-6 col-xs-6 card">
     <img class="card-img-top"
-      src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      [src]="item.image"
       alt="Card image cap">
     <div class="bottom-left">
       <h3>{{item.name}}</h3>
