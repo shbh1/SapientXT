@@ -1,9 +1,26 @@
 .bottom-left {
     position: absolute;
-    bottom: 390px;
+    bottom: 310px;
     left: 16px;
     width: max-content;
-    opacity:.5;
+    opacity:.8;
     color: white;
     background-color: rgb(87, 86, 86);
+    overflow-wrap: break-word;
   }
+  .card{
+    width: 50% !important;
+  }
+  .card-body{
+    padding: 0px;
+    color: white;
+    background-color:black;
+    overflow-wrap: break-word;
+  }
+  .row{
+    padding: 0px;
+  }
+  .sort{
+    margin-left: 12px;
+  }
+  

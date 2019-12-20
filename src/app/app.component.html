@@ -1,20 +1,32 @@
 <div class="row">
-  <div class="col-lg-3 col-sm-6 col-xs-6 ">
+  <div class="col-lg-6">
     <label>Search By Name</label><br />
     <input [(ngModel)]="searchText" placeholder="">
   </div>
-  <div class="col-lg-3 col-sm-6 col-xs-6 ">
-csdifhsnfdiu
+  <div class="col-lg-6 pull-right">
+    <select>
+      <option>Sort by ID</option>
+    </select>
+    <br/>
+    <select (change)="onDropdownChange($event)">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
   </div>
 </div>
 <div class="row">
-  <div *ngFor="let item of data['results'] | searchName: searchText ; let i = index" class="col-lg-3 col-sm-6 col card">
-    <img class="card-img-top" [src]="item.image" alt="Card image cap">
+  <div *ngFor="let item of bindedData | searchName: searchText ; let i = index"
+    class="col-lg-3 col-sm-6 col-xs-6 card">
+    <img class="card-img-top"
+      src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      alt="Card image cap">
     <div class="bottom-left">
-      <h2>{{item.name}}</h2><br/>
-      id:{{item.id}}- created: {{item.created}}
+      <h3>{{item.name}}</h3>
+      <span style="word-break: break-all;">
+        <h5>ID: {{item.id}}</h5>
+      </span>
     </div>
-    <div class="card-body ">
+    <div class="card-body">
       <table class="table table-striped">
         <tr>
           <td>STATUS</td>
