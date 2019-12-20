@@ -8,7 +8,7 @@
   </div>
 </div>
 <div class="row">
-  <div *ngFor="let item of data['results'] | searchName: searchText ; let i = index" class="col-sm-3 card">
+  <div *ngFor="let item of data['results'] | searchName: searchText ; let i = index" class="col-lg-3 col-sm-6 card">
     <img class="card-img-top" [src]="item.image" alt="Card image cap">
     <div class="bottom-left">
       <h2>{{item.name}}</h2><br/>
