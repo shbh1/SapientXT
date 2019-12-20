@@ -1,6 +1,6 @@
-<div class="row">
-  <div class="col-md-12">
-<div class="col-lg-6 col-md-6 col-sm-12"> <label>Search By Name</label><br/><input [(ngModel)]="searchText" placeholder=""></div>
+
+  <div class="row col-md-12">
+<div class="col-lg-6 col-md-6 col-sm-12"> <label>Search By Name</label><br/><input  style="width:100%;" [(ngModel)]="searchText" placeholder=""></div>
   <div class="col-lg-6 col-md-6 col-sm-12 pull-right text-right">  
       <select>
       <option>Sort by ID</option>
@@ -13,7 +13,7 @@
   </div>
 
  
-</div>
+
 <div class="row">
   <div *ngFor="let item of bindedData | searchName: searchText ; let i = index"
     class="col-lg-3 col-sm-6 col-xs-6 card">
