@@ -1,0 +1,9 @@
+.bottom-left {
+    position: absolute;
+    bottom: 390px;
+    left: 16px;
+    width: max-content;
+    opacity:.5;
+    color: white;
+    background-color: rgb(87, 86, 86);
+  }
